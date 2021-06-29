@@ -383,6 +383,7 @@ struct mmc_card {
 	unsigned int    nr_parts;
 
 	struct workqueue_struct *complete_wq;	/* Private workqueue */
+	unsigned int movi_ops;
 
 	ANDROID_KABI_RESERVE(1);
 	ANDROID_KABI_RESERVE(2);
