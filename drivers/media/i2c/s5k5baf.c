@@ -1896,7 +1896,7 @@ static int s5k5baf_configure_subdevs(struct s5k5baf *state,
 
 	state->pads[PAD_CIS].flags = MEDIA_PAD_FL_SINK;
 	state->pads[PAD_OUT].flags = MEDIA_PAD_FL_SOURCE;
-	sd->entity.function = MEDIA_ENT_F_V4L2_SUBDEV_UNKNOWN;
+	sd->entity.function = MEDIA_ENT_F_PROC_VIDEO_ISP;
 	ret = media_entity_pads_init(&sd->entity, NUM_ISP_PADS, state->pads);
 
 	if (!ret)
