@@ -26,7 +26,7 @@ static unsigned int get_reboot_mode_magic(struct reboot_mode_driver *reboot,
 	struct mode_info *info;
 	char cmd_[110];
 
-	if (!cmd)
+	if (!cmd || !*cmd)
 		cmd = normal;
 
 	list_for_each_entry(info, &reboot->head, list)
